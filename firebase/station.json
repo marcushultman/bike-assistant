@@ -1,0 +1,17 @@
+{
+  "number": 123,
+  "contract_name" : "Lyon",
+  "name": "stations name",
+  "address": "address of the station",
+  "position": {
+    "lat": 45.774204,
+    "lng": 4.867512
+  },
+  "banking": true,
+  "bonus": false,
+  "status": "OPEN",
+  "bike_stands": 20,
+  "available_bike_stands": 15,
+  "available_bikes": 5,
+  "last_update": 0, // <timestamp in ms since epoch>
+}

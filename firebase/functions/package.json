@@ -1,0 +1,21 @@
+{
+  "name": "bikes-6692f",
+  "description": "Bike sharing status fulfillment function for Google Assistant",
+  "version": "0.5.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Marcus Hultman",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "start": "firebase serve --only functions:fulfillment",
+    "deploy": "firebase deploy --only functions:fulfillment"
+  },
+  "dependencies": {
+    "actions-on-google": "2.2.0",
+    "axios": "^0.18.0",
+    "firebase-admin": "^5.13.1",
+    "firebase-functions": "^2.0.2"
+  }
+}
