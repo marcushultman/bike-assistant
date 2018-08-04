@@ -75,6 +75,9 @@ function finishWithStations(conv, stations, type) {
   console.log('stations:', stations);
   const topStation = stations[0];
   conv.close(stationSpoken(topStation, type));
+  if (!conv.screen) {
+    return;
+  }
   conv.close(new BasicCard({
     title: topStation.address,
     text: stations.map((station, i) => stationText(station, type, i > 0)).join('  \n'),
